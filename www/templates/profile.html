@@ -1,0 +1,50 @@
+<script src="js/radios-to-slider/js/jquery-1.10.2.min.js"></script>
+<script>
+            $(document).ready(function(){
+                var id = $(".dataId").html();
+                var name = $(".dataName").html();
+                //alert(id+" -- "+name);
+                alert("llego");
+
+                $.ajax({
+                  method: "POST",
+                  data: { nombre: name, id: id, plataforma: "Facebook" },
+                  url: "http://farvel.co/proyectos/bogotaApp/save_user.php",
+                })
+                .done(function( msg ) {
+                    if(msg != "saved")
+                    {
+                        alert("There was a problem getting your profile.  Check the logs for details.");
+                        console.log(error);
+                    }
+                    else
+                    {
+                        location.href="inicio.html";           
+                    }
+                });
+            });
+            </script>
+<ion-view title="Profile" ng-init="init()">
+    <ion-content>
+        <div class="list card">
+            <div class="item item-avatar">
+                <img ng-src="{{profileData.picture.data.url}}">
+                <h2 class="dataName">{{profileData.name}}</h2>
+                <p class="dataId">{{profileData.id}}</p>
+                <p>{{profileData.email}}</p>
+            </div>
+            <a href="#" class="item item-icon-left">
+                <i class="icon ion-earth"></i>
+                {{profileData.website}}
+            </a>
+            <a href="#" class="item item-icon-left">
+                <i class="icon ion-home"></i>
+                {{profileData.location.name}}
+            </a>
+            <a href="#" class="item item-icon-left">
+                <i class="icon ion-heart"></i>
+                {{profileData.relationship_status}}
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

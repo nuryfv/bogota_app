@@ -1,0 +1,794 @@
+/*----- Font ------*/
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+/*-----------------*/
+.scroll {
+    height: 100%;
+}
+ 
+#map {
+    width: 100%;
+    height: 75%;
+}
+
+.bar.bar-stable {
+    border-color: #000;
+    background-color: #000;
+    color: #444;
+}
+.bar.bar-stable .title img{height:42px;}
+
+[nav-view="cached"], [nav-bar="cached"] {
+    display: none !important;
+}
+
+/* login test10 */
+.loginPanel{ background: #000;}
+.loginLogo {
+    width: 150px;    
+    height: 120px;    
+    margin: 45% auto 0px auto;
+    background: url(../img/logo-bogota.png) no-repeat center top;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    background-size: 100% auto; 
+}
+
+.startBtn{margin: 0px auto 60px auto;position: relative;
+width:80%;height:auto;text-align: center;}
+.startBtn img{width:100%;}
+
+
+/* ------ */
+
+/* Login -- Not work - Ago 23 */
+body {
+    font-family: 'Oxygen', sans-serif !important;
+    background:#000;
+}
+
+.contentW{
+    background:#fff;
+}
+ 
+#welcome-view {
+    background: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+ 
+.logo-welcome {
+    width: 120px;
+    height: 120px;
+    margin: 100px auto 60px auto;
+    background: url(../img/logo-bogota.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+ 
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+ 
+.login-btns {
+    width: 250px;
+    margin: 0 auto 0 auto;
+}
+ 
+#btn-reg {
+    float: right;
+}
+ 
+#login-divider {
+    margin: 40px 0 10px 0;
+}
+ 
+#footer {
+    background: #000;
+    opacity: 0.4;
+    color: #fff;
+}
+ 
+.uppercase {
+    text-transform: uppercase;
+}
+ 
+#btn-reg, #btn-login {
+    color: white;
+}
+ 
+.em-small {
+    font-size: 16px;
+    text-decoration: none;
+}
+ 
+.bar .title {
+    font-weight: bold;
+    text-align: center !important;
+ 
+}
+ 
+.em-padding-header {
+    padding: 2px;
+}
+ 
+.profile-container {
+    position: relative;
+    padding: 35px;
+    background-color:lightblue;
+}
+ 
+.profile-background {
+    position:absolute;
+    top:-20%;
+    left:-20%;
+    width:140%;
+    height:140%;
+    z-index:1;
+    background-size: cover;
+    -webkit-filter: blur(30px);
+    -moz-filter: blur(25px);
+    -o-filter: blur(25px);
+    -ms-filter: blur(25px);
+    filter: blur(25px);
+    opacity: 0.65;
+}
+ 
+.profile-pic {
+    position:relative;
+    z-index:5;
+    text-align: center;
+    height: 95px;
+    width: 95px;
+    background-size: cover;
+    display: block;
+    margin: 0 auto 0 auto;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+}
+ 
+.em-gender .item-checkbox {
+    padding-left: 50px !important;
+    font-size: 14px;
+    border-width: 0;
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
+}
+ 
+.platform-android ion-popover-view.fit {
+    margin-top: 10px !important;
+}
+/* ------ */
+
+h1.title img{height:30px;}
+h1.title{text-align:center;width:95%;margin:0 auto;display:inline-block}
+
+#radios input{margin-left:10px;}
+.optionsBlock{background:#2e9ed6;padding-top:5%}
+.options{height: 80px;padding-top: 3%;width: 86%;margin: 0 auto;position: relative;}
+.options label{color:#fff !important;font-size:12px !important;width:30% !important;margin-left:-10%}
+.labelblock{width:80%;margin:0 auto;text-align:center;color:#999;font-size:12px;padding-top:20px}
+
+
+.title.ng-binding{background: url('../img/logo-bogota.png') no-repeat center top !important;background-size: auto 90% !important;}
+.bar.bar-dark {background:#000;visibility: visible !important;}
+.menu {background:#fff !important;}
+.black-top-menu{background:#000!important;}
+.menu .bar-header{height:0;display:block;}
+.menu .list .item{background:none !important;border:none;background:#000 !important;}
+.menu .item a{color:#fff !important;text-decoration:none;font-size:20px;}
+.menu .item a img{margin-left:10px;padding-right:5px;width: 32px;}
+.social-menu img{width: 16%;margin: 5% 5%;}
+
+.logos{text-align:center;margin-top:5%;background:#fff;}
+.logos img{width:70%;margin:10px auto;}
+.menu-head, h1.title{background:#000 !important}
+h1{margin:0 !important;width:100% !important;}
+h1 i{float:left;line-height:20px !important;margin-top:10px !important;color:#fff;margin-left:15px;font-size:18px;}
+
+.tabs-info{width:100%;height:100%;position:relative;}
+.tabs-info .scroll.padding {padding:0 5px;}
+.tab-content{margin-top: 50px;height: 80%;z-index: 18000 !important;overflow: visible;}
+.tabs{top: 44px;margin-top: 0;padding-top: 0;z-index: 18 !important;background: red;height: 48px;margin-bottom: -1px;}
+
+.tabs a{font-size:0.75em !important;color:#fff;font-family: 'Oxygen', sans-serif !important;font-weight:400;padding-bottom: 2px !important;height: 49px;opacity: 1;}
+.tabs .tab-red{background:#c11a11 !important;}
+.tabs .tab-green{background:#8cc835 !important;}
+.tabs .tab-blue{background:#2e9ed6 !important;}
+.tabs .tab-coffe{background:#c29a67 !important;}
+
+/* List */
+.list{margin:0;padding:0 !important;}
+.item{border-right:none;border-left:none;padding-left:0;padding-right:0}
+.item-list{display:block;position:relative;border:1px solid #ccc;border:none;margin:0;padding:0;margin-bottom:10px;font-family: 'Oxygen', sans-serif !important;}
+.item-list i{position:absolute;right:10;top:8;}
+.item-content{display:block;position:relative;margin-bottom:0px;padding-top: 10px;border-top:1px solid #ccc;height: auto !important;}
+.item-content img{width:100%;padding:0;margin:0;}
+.item-content b{display:block;font-size:0.8em;}
+.item-content p{display:block;font-size:0.8em;line-height:1.4em;text-align:justify;word-wrap: break-word !important;overflow:visible;white-space:normal;font-weight:300;}
+.item-content .socialIcons img{width:20%;}
+
+p.tab-red{background:#c11a11 !important;margin:-1px -5px 0 -5px;padding:0.8em 2px;text-align:center;color:#fff;font-weight:400 !important;font-size:1.3em;text-transform:uppercase;}
+p.tab-green{background:#8cc835 !important;margin: -2px -5px 0 -5px;padding: 0.88em 2px;text-align:center;color:#fff;font-weight:400 !important;font-size:1.3em;text-transform:uppercase;}
+p.tab-blue{background:#2e9ed6 !important;margin:-1px -5px 0 -5px;padding:0.8em 2px;text-align:center;color:#fff;font-weight:400 !important;font-size:1.3em;text-transform:uppercase;}
+p.tab-coffe{background:#c29a67 !important;margin:-1px -5px 0 -5px;padding:0.8em 2px;text-align:center;color:#fff;font-weight:400 !important;font-size:1.3em;text-transform:uppercase;}
+
+
+.actionsmap{position:relative;}
+#selectType{position:absolute;top:-20px;z-index:150000;left: 44%;}
+#selectType img{width:42px;}
+#typeSelect{position:absolute;top:-150%;left:15%;width:70%;background:#fff;}
+#typeSelect p{margin:0;height:40px;line-height:40px;padding-left:10px;position:relative;}
+#typeSelect p img{position:absolute;right:15px;top:12px}
+#typeSelect .black{background:#000;color:#fff;}
+#typeSelect .red{background:#c11a11;color:#fff;}
+#typeSelect .blue{background:#2e9ed6;color: #fff !important;margin-bottom: 0 !important;}
+#typeSelect .coffe{background:#c29a67;color:#fff;}
+#typeSelect .green{background:#8cc835;color:#fff;line-height:15px;padding-top:5px;}
+
+.about-content{padding:10px;}
+
+.scroll-infinite i{display:none;}
+
+.info-tabM{margin-top:10%;text-align:center;color:#666;font-size:16px;width:90%;margin:15% auto 0;}
+
+#infoMap .titulo{font-weight:500;text-transform:uppercase;font-size:18px;color:#2e9ed6;border-bottom:1px solid;padding-bottom:5px;}
+#infoMap .direccion{color:#444;line-height:18px;margin-top:10px;}
+#infoMap .horario{color:#000;line-height:18px;margin-top:10px;}
+#infoMap .buttons div{width:40%;height:110px;text-align:center;color:#2e9ed6;border:1px solid #efefef;margin:0 auto;border-radius:1px;margin-bottom:10px;float:right;}
+#infoMap .buttons .picture{float:left;margin-top:10px;border:none;}
+#infoMap .buttons .picture img{width:100%;}
+#infoMap .buttons div a{color:#2e9ed6;text-decoration:none;text-transform:uppercase;font-weight:500;}
+#infoMap .description{width:100%;float:left;color:#444;line-height:16px;margin-top:10px;font-size:12px;height: 120px;overflow: scroll;}
+#infoMap .web{width:100%;display:block;float:left;}
+#infoMap .web a{text-decoration:none;color:#2e9ed6;}
+#layerBox{ width:85%;height: 500px;position:absolute;z-index:1800000;top: 10%;left:8%;background:#fff;padding:20px;box-shadow:0px 2px 3px #666;color:#2e9ed6;font-family: 'Oxygen', sans-serif !important;}
+
+.tab-item-active:after{
+    background-image: url('../img/radio-normal.png');
+    background-size: 10px 20px;
+    width: 10px; 
+    height: 20px;
+    content:"";
+    
+}
+.blueB{color: #2e9ed6 !important;margin-top: 5px !important;}
+.blue{color: #2e9ed6 !important;font-weight: bold !important;margin-bottom: 5px !important;}
+.hidden{display:none;}/*----- Font ------*/
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+/*-----------------*/
+.scroll {
+    height: 100%;
+}
+ 
+#map {
+    width: 100%;
+    height: 75%;
+}
+
+.bar.bar-stable {
+    border-color: #000;
+    background-color: #000;
+    color: #444;
+}
+.bar.bar-stable .title img{height:42px;}
+
+[nav-view="cached"], [nav-bar="cached"] {
+    display: none !important;
+}
+
+/* login test10 */
+.loginPanel{ background: #000;}
+.loginLogo {
+    width: 150px;    
+    height: 120px;    
+    margin: 45% auto 0px auto;
+    background: url(../img/logo-bogota.png) no-repeat center top;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    background-size: 100% auto; 
+}
+
+.startBtn{margin: 0px auto 60px auto;position: relative;
+width:80%;height:auto;text-align: center;}
+.startBtn img{width:100%;}
+
+
+/* ------ */
+
+/* Login -- Not work - Ago 23 */
+body {
+    font-family: 'Oxygen', sans-serif !important;
+    background:#000;
+}
+
+.contentW{
+    background:#fff;
+}
+ 
+#welcome-view {
+    background: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+ 
+.logo-welcome {
+    width: 120px;
+    height: 120px;
+    margin: 100px auto 60px auto;
+    background: url(../img/logo-bogota.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+ 
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+ 
+.login-btns {
+    width: 250px;
+    margin: 0 auto 0 auto;
+}
+ 
+#btn-reg {
+    float: right;
+}
+ 
+#login-divider {
+    margin: 40px 0 10px 0;
+}
+ 
+#footer {
+    background: #000;
+    opacity: 0.4;
+    color: #fff;
+}
+ 
+.uppercase {
+    text-transform: uppercase;
+}
+ 
+#btn-reg, #btn-login {
+    color: white;
+}
+ 
+.em-small {
+    font-size: 16px;
+    text-decoration: none;
+}
+ 
+.bar .title {
+    font-weight: bold;
+    text-align: center !important;
+ 
+}
+ 
+.em-padding-header {
+    padding: 2px;
+}
+ 
+.profile-container {
+    position: relative;
+    padding: 35px;
+    background-color:lightblue;
+}
+ 
+.profile-background {
+    position:absolute;
+    top:-20%;
+    left:-20%;
+    width:140%;
+    height:140%;
+    z-index:1;
+    background-size: cover;
+    -webkit-filter: blur(30px);
+    -moz-filter: blur(25px);
+    -o-filter: blur(25px);
+    -ms-filter: blur(25px);
+    filter: blur(25px);
+    opacity: 0.65;
+}
+ 
+.profile-pic {
+    position:relative;
+    z-index:5;
+    text-align: center;
+    height: 95px;
+    width: 95px;
+    background-size: cover;
+    display: block;
+    margin: 0 auto 0 auto;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+}
+ 
+.em-gender .item-checkbox {
+    padding-left: 50px !important;
+    font-size: 14px;
+    border-width: 0;
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
+}
+ 
+.platform-android ion-popover-view.fit {
+    margin-top: 10px !important;
+}
+/* ------ */
+
+h1.title img{height:30px;}
+h1.title{text-align:center;width:95%;margin:0 auto;display:inline-block}
+
+#radios input{margin-left:10px;}
+.optionsBlock{background:#2e9ed6;padding-top:5%}
+.options{height: 80px;padding-top: 3%;width: 86%;margin: 0 auto;position: relative;}
+.options label{color:#fff !important;font-size:12px !important;width:30% !important;margin-left:-10%}
+.labelblock{width:80%;margin:0 auto;text-align:center;color:#999;font-size:12px;padding-top:20px}
+
+
+.title.ng-binding{background: url('../img/logo-bogota.png') no-repeat center top !important;background-size: auto 90% !important;}
+.bar.bar-dark {background:#000;visibility: visible !important;}
+.menu {background:#fff !important;}
+.black-top-menu{background:#000!important;}
+.menu .bar-header{height:0;display:block;}
+.menu .list .item{background:none !important;border:none;background:#000 !important;}
+.menu .item a{color:#fff !important;text-decoration:none;font-size:20px;}
+.menu .item a img{margin-left:10px;padding-right:5px;width: 32px;}
+.social-menu img{width: 16%;margin: 5% 5%;}
+
+.logos{text-align:center;margin-top:5%;background:#fff;}
+.logos img{width:70%;margin:10px auto;}
+.menu-head, h1.title{background:#000 !important}
+h1{margin:0 !important;width:100% !important;}
+h1 i{float:left;line-height:20px !important;margin-top:10px !important;color:#fff;margin-left:15px;font-size:18px;}
+
+.tabs-info{width:100%;height:100%;position:relative;}
+.tabs-info .scroll.padding {padding:0 5px;}
+.tab-content{margin-top: 50px;height: 80%;z-index: 18000 !important;overflow: visible;}
+.tabs{top: 44px;margin-top: 0;padding-top: 0;z-index: 18 !important;background: red;height: 48px;margin-bottom: -1px;}
+
+.tabs a{font-size:0.75em !important;color:#fff;font-family: 'Oxygen', sans-serif !important;font-weight:400;padding-bottom: 2px !important;height: 49px;opacity: 1;}
+.tabs .tab-red{background:#c11a11 !important;}
+.tabs .tab-green{background:#8cc835 !important;}
+.tabs .tab-blue{background:#2e9ed6 !important;}
+.tabs .tab-coffe{background:#c29a67 !important;}
+
+/* List */
+.list{margin:0;padding:0 !important;}
+.item{border-right:none;border-left:none;padding-left:0;padding-right:0}
+.item-list{display:block;position:relative;border:1px solid #ccc;border:none;margin:0;padding:0;margin-bottom:10px;font-family: 'Oxygen', sans-serif !important;}
+.item-list i{position:absolute;right:10;top:8;}
+.item-content{display:block;position:relative;margin-bottom:0px;padding-top: 10px;border-top:1px solid #ccc;height: auto !important;}
+.item-content img{width:100%;padding:0;margin:0;}
+.item-content b{display:block;font-size:0.8em;}
+.item-content p{display:block;font-size:0.8em;line-height:1.4em;text-align:justify;word-wrap: break-word !important;overflow:visible;white-space:normal;font-weight:300;}
+.item-content .socialIcons img{width:20%;}
+
+p.tab-red{background:#c11a11 !important;margin:-1px -5px 0 -5px;padding:0.8em 2px;text-align:center;color:#fff;font-weight:400 !important;font-size:1.3em;text-transform:uppercase;}
+p.tab-green{background:#8cc835 !important;margin: -2px -5px 0 -5px;padding: 0.88em 2px;text-align:center;color:#fff;font-weight:400 !important;font-size:1.3em;text-transform:uppercase;}
+p.tab-blue{background:#2e9ed6 !important;margin:-1px -5px 0 -5px;padding:0.8em 2px;text-align:center;color:#fff;font-weight:400 !important;font-size:1.3em;text-transform:uppercase;}
+p.tab-coffe{background:#c29a67 !important;margin:-1px -5px 0 -5px;padding:0.8em 2px;text-align:center;color:#fff;font-weight:400 !important;font-size:1.3em;text-transform:uppercase;}
+
+
+.actionsmap{position:relative;}
+#selectType{position:absolute;top:-20px;z-index:150000;left: 44%;}
+#selectType img{width:42px;}
+#typeSelect{position:absolute;top:-150%;left:15%;width:70%;background:#fff;}
+#typeSelect p{margin:0;height:40px;line-height:40px;padding-left:10px;position:relative;}
+#typeSelect p img{position:absolute;right:15px;top:12px}
+#typeSelect .black{background:#000;color:#fff;}
+#typeSelect .red{background:#c11a11;color:#fff;}
+#typeSelect .blue{background:#2e9ed6;color: #fff !important;margin-bottom: 0 !important;}
+#typeSelect .coffe{background:#c29a67;color:#fff;}
+#typeSelect .green{background:#8cc835;color:#fff;line-height:15px;padding-top:5px;}
+
+.about-content{padding:10px;}
+
+.scroll-infinite i{display:none;}
+
+.info-tabM{margin-top:10%;text-align:center;color:#666;font-size:16px;width:90%;margin:15% auto 0;}
+
+#infoMap .titulo{font-weight:500;text-transform:uppercase;font-size:18px;color:#2e9ed6;border-bottom:1px solid;padding-bottom:5px;}
+#infoMap .direccion{color:#444;line-height:18px;margin-top:10px;}
+#infoMap .horario{color:#000;line-height:18px;margin-top:10px;}
+#infoMap .buttons div{width:40%;height:110px;text-align:center;color:#2e9ed6;border:1px solid #efefef;margin:0 auto;border-radius:1px;margin-bottom:10px;float:right;}
+#infoMap .buttons .picture{float:left;margin-top:10px;border:none;}
+#infoMap .buttons .picture img{width:100%;}
+#infoMap .buttons div a{color:#2e9ed6;text-decoration:none;text-transform:uppercase;font-weight:500;}
+#infoMap .description{width:100%;float:left;color:#444;line-height:16px;margin-top:10px;font-size:12px;height: 120px;overflow: scroll;}
+#infoMap .web{width:100%;display:block;float:left;}
+#infoMap .web a{text-decoration:none;color:#2e9ed6;}
+#layerBox{ width:85%;height: 500px;position:absolute;z-index:1800000;top: 10%;left:8%;background:#fff;padding:20px;box-shadow:0px 2px 3px #666;color:#2e9ed6;font-family: 'Oxygen', sans-serif !important;}
+
+.tab-item-active:after{
+    background-image: url('../img/radio-normal.png');
+    background-size: 10px 20px;
+    width: 10px; 
+    height: 20px;
+    content:"";
+    
+}
+.blueB{color: #2e9ed6 !important;margin-top: 5px !important;}
+.blue{color: #2e9ed6 !important;font-weight: bold !important;margin-bottom: 5px !important;}
+.hidden{display:none;}/*----- Font ------*/
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+/*-----------------*/
+.scroll {
+    height: 100%;
+}
+ 
+#map {
+    width: 100%;
+    height: 75%;
+}
+
+.bar.bar-stable {
+    border-color: #000;
+    background-color: #000;
+    color: #444;
+}
+.bar.bar-stable .title img{height:42px;}
+
+[nav-view="cached"], [nav-bar="cached"] {
+    display: none !important;
+}
+
+/* login test10 */
+.loginPanel{ background: #000;}
+.loginLogo {
+    width: 150px;    
+    height: 120px;    
+    margin: 45% auto 0px auto;
+    background: url(../img/logo-bogota.png) no-repeat center top;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    background-size: 100% auto; 
+}
+
+.startBtn{margin: 0px auto 60px auto;position: relative;
+width:80%;height:auto;text-align: center;}
+.startBtn img{width:100%;}
+.startBtn a{background:#e5b44b !important;border:none;width:100%;margin-bottom:20px;}
+.startBtn a.nobg{background: none !important;}
+
+
+/* ------ */
+
+/* Login -- Not work - Ago 23 */
+body {
+    font-family: 'Oxygen', sans-serif !important;
+    background:#000;
+}
+
+.contentW{
+    background:#fff;
+}
+ 
+#welcome-view {
+    background: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+ 
+.logo-welcome {
+    width: 120px;
+    height: 120px;
+    margin: 100px auto 60px auto;
+    background: url(../img/logo-bogota.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+ 
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+ 
+.login-btns {
+    width: 250px;
+    margin: 0 auto 0 auto;
+}
+ 
+#btn-reg {
+    float: right;
+}
+ 
+#login-divider {
+    margin: 40px 0 10px 0;
+}
+ 
+#footer {
+    background: #000;
+    opacity: 0.4;
+    color: #fff;
+}
+ 
+.uppercase {
+    text-transform: uppercase;
+}
+ 
+#btn-reg, #btn-login {
+    color: white;
+}
+ 
+.em-small {
+    font-size: 16px;
+    text-decoration: none;
+}
+ 
+.bar .title {
+    font-weight: bold;
+    text-align: center !important;
+ 
+}
+ 
+.em-padding-header {
+    padding: 2px;
+}
+ 
+.profile-container {
+    position: relative;
+    padding: 35px;
+    background-color:lightblue;
+}
+ 
+.profile-background {
+    position:absolute;
+    top:-20%;
+    left:-20%;
+    width:140%;
+    height:140%;
+    z-index:1;
+    background-size: cover;
+    -webkit-filter: blur(30px);
+    -moz-filter: blur(25px);
+    -o-filter: blur(25px);
+    -ms-filter: blur(25px);
+    filter: blur(25px);
+    opacity: 0.65;
+}
+ 
+.profile-pic {
+    position:relative;
+    z-index:5;
+    text-align: center;
+    height: 95px;
+    width: 95px;
+    background-size: cover;
+    display: block;
+    margin: 0 auto 0 auto;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+}
+ 
+.em-gender .item-checkbox {
+    padding-left: 50px !important;
+    font-size: 14px;
+    border-width: 0;
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
+}
+ 
+.platform-android ion-popover-view.fit {
+    margin-top: 10px !important;
+}
+/* ------ */
+
+h1.title img{height:30px;}
+h1.title{text-align:center;width:95%;margin:0 auto;display:inline-block}
+
+#radios input{margin-left:10px;}
+.optionsBlock{background:#2e9ed6;padding-top: 4%;margin-top: 5px !important;}
+.options{height: 80px;padding-top: 3%;width: 86%;margin: 0 auto;position: relative;border-bottom: none !important;}
+.options label{color:#fff !important;font-size:12px !important;width:30% !important;margin-left:-10%}
+.labelblock{width:80%;margin:0 auto;text-align:center;color:#999;font-size:12px;padding-top:20px;}
+
+
+.title.ng-binding{background: url('../img/logo-bogota.png') no-repeat center top !important;background-size: auto 90% !important;}
+.bar.bar-dark {background:#000;visibility: visible !important;}
+.menu {background:#fff !important;}
+.black-top-menu{background:#000!important;}
+.menu .bar-header{height:0;display:block;}
+.menu .list .item{background:none !important;border:none;background:#000 !important;}
+.menu .item a{color:#fff !important;text-decoration:none;font-size:20px;}
+.menu .item a img{margin-left:10px;padding-right:5px;width: 32px;}
+.social-menu img{width: 16%;margin: 5% 5%;}
+
+.logos{text-align:center;margin-top:5%;background:#fff;}
+.logos img{width:70%;margin:10px auto;}
+.menu-head, h1.title{background:#000 !important}
+h1{margin:0 !important;width:100% !important;}
+h1 i{float:left;line-height:20px !important;margin-top:10px !important;color:#fff;margin-left:15px;font-size:18px;}
+
+.tabs-info{width:100%;height:100%;position:relative;}
+.tabs-info .scroll.padding {padding:0 5px;}
+.tab-content{margin-top: 50px;height: 80%;z-index: 18000 !important;overflow: visible;}
+.tabs{top: 44px;margin-top: 0;padding-top: 0;z-index: 18 !important;background: red;height: 48px;margin-bottom: -1px;}
+
+.tabs a{font-size:0.75em !important;color:#fff;font-family: 'Oxygen', sans-serif !important;font-weight:400;padding-bottom: 2px !important;height: 49px;opacity: 1;}
+.tabs .tab-red{background:#c11a11 !important;}
+.tabs .tab-green{background:#8cc835 !important;}
+.tabs .tab-blue{background:#2e9ed6 !important;}
+.tabs .tab-coffe{background:#c29a67 !important;}
+
+/* List */
+.list{margin:0;padding:0 !important;}
+.item{border-right:none;border-left:none;padding-left:0;padding-right:0}
+.item-list{display:block;position:relative;border:1px solid #ccc;border:none;margin:0;padding:0;margin-bottom:10px;font-family: 'Oxygen', sans-serif !important;}
+.item-list i{position:absolute;right:10;top:8;}
+.item-content{display:block;position:relative;margin-bottom:0px;padding-top: 10px;border-top:1px solid #ccc;height: auto !important;}
+.item-content img{width:100%;padding:0;margin:0;}
+.item-content b{display:block;font-size:0.8em;}
+.item-content p{display:block;font-size:0.8em;line-height:1.4em;text-align:justify;word-wrap: break-word !important;overflow:visible;white-space:normal;font-weight:300;}
+.item-content .socialIcons img{width:20%;}
+
+p.tab-red{background:#c11a11 !important;margin:-1px -5px 0 -5px;padding:0.8em 2px;text-align:center;color:#fff;font-weight:400 !important;font-size:1.3em;text-transform:uppercase;}
+p.tab-green{background:#8cc835 !important;margin: -2px -5px 0 -5px;padding: 0.88em 2px;text-align:center;color:#fff;font-weight:400 !important;font-size:1.3em;text-transform:uppercase;}
+p.tab-blue{background:#2e9ed6 !important;margin:-1px -5px 0 -5px;padding:0.8em 2px;text-align:center;color:#fff;font-weight:400 !important;font-size:1.3em;text-transform:uppercase;}
+p.tab-coffe{background:#c29a67 !important;margin:-1px -5px 0 -5px;padding:0.8em 2px;text-align:center;color:#fff;font-weight:400 !important;font-size:1.3em;text-transform:uppercase;}
+
+
+.actionsmap{position:relative;background:#fff;}
+#selectType{position:absolute;top:-20px;z-index:150000;left: 44%;}
+#selectType img{width:42px;}
+#typeSelect{position:absolute;top:-150%;left:15%;width:70%;background:#fff;}
+#typeSelect p{margin:0;height:40px;line-height:40px;padding-left:10px;position:relative;}
+#typeSelect p img{position:absolute;right:15px;top:12px}
+#typeSelect .black{background:#000;color:#fff;}
+#typeSelect .red{background:#c11a11;color:#fff;}
+#typeSelect .blue{background:#2e9ed6;color: #fff !important;margin-bottom: 0 !important;}
+#typeSelect .coffe{background:#c29a67;color:#fff;}
+#typeSelect .green{background:#8cc835;color:#fff;line-height:15px;padding-top:5px;}
+
+.about-content{padding:10px;}
+
+.scroll-infinite i{display:none;}
+
+.info-tabM{margin-top:10%;text-align:center;color:#666;font-size:16px;width:90%;margin:15% auto 0;}
+
+#infoMap .closeBtn{width:10%;float:right;}
+#infoMap .titulo{font-weight:500;text-transform:uppercase;font-size:18px;color:#2e9ed6;border-bottom:1px solid;padding-bottom:5px;}
+#infoMap .direccion{color:#444;line-height:18px;margin-top:10px;}
+#infoMap .horario{color:#000;line-height:18px;margin-top:10px;}
+#infoMap .buttons div{width:40%;height:110px;text-align:center;color:#2e9ed6;border:1px solid #efefef;margin:0 auto;border-radius:1px;margin-bottom:10px;float:right;}
+#infoMap .buttons .picture{float:left;margin-top:10px;border:none;text-align: center;}
+#infoMap .buttons .picture img{width: 100%;/* height: 100%; */max-height: 100%;margin: 0 auto;text-align: center;}
+#infoMap .buttons div a{color:#2e9ed6;text-decoration:none;text-transform:uppercase;font-weight:500;}
+#infoMap .description{width:100%;float:left;color:#444;line-height:16px;margin-top:10px;font-size:12px;height: 220px;overflow: hidden;}
+#infoMap .web{width:100%;display:block;float:left;}
+#infoMap .web a{text-decoration:none;color:#2e9ed6;}
+#layerBox{ width:85%;height: 540px;position:absolute;z-index:1800000;top: 10%;left:8%;background:#fff;padding:20px;box-shadow:0px 2px 3px #666;color:#2e9ed6;font-family: 'Oxygen', sans-serif !important;}
+
+.tab-item-active:after{
+    background-image: url('../img/radio-normal.png');
+    background-size: 10px 20px;
+    width: 10px; 
+    height: 20px;
+    content:"";
+    
+}
+.blueB{color: #2e9ed6 !important;margin-top: 5px !important;}
+.blueB a{color: #2e9ed6 !important;text-decoration:none;}
+.blue{color: #2e9ed6 !important;font-weight: bold !important;margin-bottom: 5px !important;}
+.hidden{display:none;}
+
+.map{background:#2e9ed6;}
+.loading{background:url(img/loading.gif) no-repeat center center;}
+
+.view{background:#000 !important;}
+.bar-positive{display:none!important;}

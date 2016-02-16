@@ -1,0 +1,86 @@
+<html ng-app="ionicApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    
+    <title>Bogota Circuito Arte </title>
+
+    <link href="http://code.ionicframework.com/1.0.0-beta.6/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="http://code.ionicframework.com/1.0.0-beta.6/js/ionic.bundle.js"></script>
+    <script src="js/appc.js"></script>
+    <!--<script src="js/app.js"></script>-->
+   
+  </head>
+ 
+  <body>
+    
+    <div ng-controller="AppController">       
+      <ion-nav-view></ion-nav-view>
+    </div>
+    
+    <script id="app.html" type="text/ng-template">
+      <ion-side-menus>
+        
+        <ion-side-menu-content>
+          <ion-nav-bar class="bar-dark">
+            <ion-nav-back-button class="button-icon ion-arrow-left-c">
+            </ion-nav-back-button>
+          </ion-nav-bar>
+          <ion-nav-buttons side="left">
+            <button class="button button-icon button-clear ion-navicon" ng-click="toggleLeft()">
+            </button>
+          </ion-nav-buttons>
+          <ion-nav-view name="appContent"></ion-nav-view>
+        </ion-side-menu-content> 
+        
+        <ion-side-menu side="left">
+          <ion-header-bar class="menu-head">
+            <h1 class="title"><a menu-close href="#/home"><i class="icon ion-android-close"></i></a></h1>
+          </ion-header-bar>
+          <ion-content>
+            <div class="black-top-menu">
+              <ul class="list">
+                  <li class="item">
+                    <a href="inicio.html"><img src="img/mapa.png" /> Mapa</a>
+                  </li>
+                  <li class="item">
+                    <a href="listado.html"><img src="img/listado.png" /> Listado</a>
+                  </li>
+                  <li class="item">
+                    <a href="about.html"><img src="img/about.png" /> Acerca de</a>
+                  </li>
+              </ul>
+              <hr />
+              <div class="social-menu">
+                  <a href="http://facebook.com"><img src="img/facebook.png" /></a>
+                  <a href="http://twitter.com"><img src="img/twitter.png" /></a>
+              </div>
+            </div>
+            <div class="logos">
+                <p><img src="img/arteria-logo.png" /></p>
+                <p><img src="img/alcaldiabog-logo.png" /></p>
+                <p><img src="img/ccbog-logo.png" /></p>
+            </div>
+          </ion-content>
+        </ion-side-menu>
+      </ion-side-menus>
+    </script>
+    
+    
+<script id="about.html" type="text/ng-template">
+    <ion-content>
+        <div style="height: 64px;"></div>
+        <div class="about-content">
+          <h3>Acerca de</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a nunc fringilla felis euismod tincidunt at in justo. Curabitur sit amet cursus nulla. Sed dui quam, suscipit et ultrices ornare, tempor sit amet risus. Vivamus hendrerit velit sit amet lectus iaculis, eu interdum enim feugiat. Quisque dolor dolor, laoreet a eros eu, aliquam pharetra nunc. Nulla hendrerit auctor efficitur. Donec interdum est sed est fringilla posuere. Sed et leo ut dui gravida dapibus. Suspendisse vitae tristique metus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a nunc fringilla felis euismod tincidunt at in justo. Curabitur sit amet cursus nulla. Sed dui quam, suscipit et ultrices ornare, tempor sit amet risus. Vivamus hendrerit velit sit amet lectus iaculis, eu interdum enim feugiat. Quisque dolor dolor, laoreet a eros eu, aliquam pharetra nunc. Nulla hendrerit auctor efficitur. Donec interdum est sed est fringilla posuere. Sed et leo ut dui gravida dapibus. Suspendisse vitae tristique metus.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a nunc fringilla felis euismod tincidunt at in justo. Curabitur sit amet cursus nulla. Sed dui quam, suscipit et ultrices ornare, tempor sit amet risus. Vivamus hendrerit velit sit amet lectus iaculis, eu interdum enim feugiat. Quisque dolor dolor, laoreet a eros eu, aliquam pharetra nunc. Nulla hendrerit auctor efficitur. Donec interdum est sed est fringilla posuere. Sed et leo ut dui gravida dapibus. Suspendisse vitae tristique metus.</p>
+        </div>  
+    </ion-content>
+</script>
+
+  
+   
+  </body>
+</html>
