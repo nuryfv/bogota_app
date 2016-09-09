@@ -15,7 +15,7 @@ angular.module('ionicApp', ['ionic'])
       views: {
         'appContent' :{
           templateUrl: "about.html",
-          controller : "TabsPageController"
+          controller : "AboutPageController"
         }
       }
     })
@@ -31,10 +31,28 @@ angular.module('ionicApp', ['ionic'])
 })
 
 
-.controller('TabsPageController', [ '$scope', '$state', function($scope, $state) {
-   
+.controller('AboutPageController', [ '$scope', '$state', function($scope, $state) {
+    $scope.navTitle = 'Acerca de Nosotros';
+    $scope.aboutText = '';
+    
+    $scope.leftButtons = [{
+        type: 'button-icon icon ion-navicon',
+        tap: function(e) {
+            $scope.toggleMenu();
+        }
+    }];
 
-
+    
+      $.ajax({
+        method: "GET",
+        url: "http://buhoestudiocreativo.com/bogotaApp/about.php",
+        data: {}
+      })
+      .done(function(msg) {
+        /*console.log(msg);
+        $scope.aboutText = msg;*/
+        $('#aboutText').text(msg);
+      });
     
 }])
 

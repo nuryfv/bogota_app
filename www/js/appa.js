@@ -45,7 +45,7 @@ angular.module('ionicApp', ['ionic'])
   
 
   google.maps.event.addDomListener(window, 'load', function() {
-        var myLatlng = new google.maps.LatLng(37.3000, -120.4833);
+        var myLatlng = new google.maps.LatLng(4.659330, -74.088528);
  
         var mapOptions = {
             center: myLatlng,
@@ -184,7 +184,7 @@ function setMarkers(map, points) {
         var Mphone = this.phone;
         var Mpicture = this.picture;
         var Mtext = this.description;
-        var Mweb = "<a href='http://"+this.web+"'>"+this.web+"</a>";
+        var Mweb = this.web;
         infoLayer(Mtitulo,Mhorario,Mdireccion,Mphone,Mpicture,Mtext,Mweb);
     });
 
@@ -256,27 +256,13 @@ function setMapOnAll(myMap) {
   }
 }
 
-function hiddeMarkers(zone, tipo){
+function hiddeMarkers(zone){
     
    
     setMapOnAll(null);
     setMapOnAll(myMap);
     if(zone != 'todos')
     {
-      if(tipo != 'todos')
-      {
-        for(j=0; j<markers.length; j++){
-            var marker = markers[j];
-            console.log(marker);
-            if(marker.zone != zone || marker.tipo != tipo)
-            {
-              markers[j].setMap(null);  
-            }
-            
-        }  
-      }
-      else
-      {
         for(j=0; j<markers.length; j++){
             var marker = markers[j];
             console.log(marker);
@@ -285,47 +271,17 @@ function hiddeMarkers(zone, tipo){
               markers[j].setMap(null);  
             }
             
-        } 
-      }
-    }
-    else
-    {
-      if(tipo != 'todos')
-      {
-        for(j=0; j<markers.length; j++){
-              var marker = markers[j];
-              console.log(marker);
-              if(marker.tipo != tipo)
-              {
-                markers[j].setMap(null);  
-              }
-              
-        }
-      } 
+        }  
     }
     
 }
 
-function hiddeMarkersType(tipo, zone){
+function hiddeMarkersType(tipo){
     setMapOnAll(null);
     setMapOnAll(myMap);
     //alert(tipo);
     if(tipo != 'todos')
     {
-      if(zone != 'todos')
-      {
-        for(j=0; j<markers.length; j++){
-            var marker = markers[j];
-            console.log(marker);
-            if(marker.tipo != tipo || marker.zone != zone)
-            {
-              markers[j].setMap(null);  
-            }
-            
-        }
-      }
-      else
-      {
         for(j=0; j<markers.length; j++){
             var marker = markers[j];
             console.log(marker);
@@ -334,23 +290,7 @@ function hiddeMarkersType(tipo, zone){
               markers[j].setMap(null);  
             }
             
-        }
-      }  
-    }
-    else
-    {
-      if(zone != 'todos')
-      {
-        for(j=0; j<markers.length; j++){
-              var marker = markers[j];
-              console.log(marker);
-              if(marker.zone != zone)
-              {
-                markers[j].setMap(null);  
-              }
-              
-        }
-      } 
+        }  
     }
 }
 
